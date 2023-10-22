@@ -91,6 +91,15 @@
     text-align: center;
   }
 
+  td {
+    padding: 5px 0;
+  }
+
+  #input-nombre{
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
   footer{
     padding: 0.3em;
     margin-top: 20px;
