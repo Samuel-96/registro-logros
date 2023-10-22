@@ -1,0 +1,13 @@
+CSS Grid Animations  https://css-tricks.com/animating-css-grid-how-to-examples/
+
+Lorem Ipsum:         https://es.lipsum.com/feed/html
+
+CSS Cheat:           https://htmlcheatsheet.com/css/
+
+Iconos:              https://fonts.google.com/icons
+
+Patrones REGEX:      https://www.html5pattern.com/Passwords
+
+Forms:               https://www.sitepoint.com/html-forms-constraint-validation-complete-guide/
+
+Assets gratis:       https://unsplash.com/es
