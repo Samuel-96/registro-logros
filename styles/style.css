@@ -23,17 +23,16 @@
     background-size: cover;
     
   }
-  .two h1:before {
+  .titulo-web h1:before {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 60px;
     height: 2px;
     content: "";
-    background-color: #c50000;
   }
   
-  .two h1 span {
+  .titulo-web h1 span {
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
@@ -63,6 +62,10 @@
     flex-direction: column;
   }
 
+  .fecha{
+ 
+  }
+
   table{
     border: 1px solid;
     padding: 0.5em;
@@ -83,19 +86,22 @@
     background-color: #000000b9;
     border-radius: 4px;
     font-family: 'Love Ya Like A Sister', cursive;
+    margin-bottom: -6px;
   }
 
   input{
     background-color: #a69e9300;
     border-style: none;
     text-align: center;
+    font-family: 'Love Ya Like A Sister', cursive;
   }
 
+  /*controla espacio entre celdas*/
   td {
     padding: 5px 0;
   }
 
-  #input-nombre{
+  .input-nombre{
     border: 1px solid black;
     border-radius: 4px;
   }
@@ -115,6 +121,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    max-height: 20px;
   }
   
   footer img{

@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
     <title>Página</title>
 </head>
 <body>
 
     <main>
-        <div class="two">
+        <div class="titulo-web">
+            
             <h1>EXPEDICIONES
                 <br>
               <span>REGISTRO DE LOGROS</span>
             </h1>
+
           </div>
 
         <div class="tabla">
             <h2 class="titulo-tabla">LOS PRIMEROS GANADORES POR CADA NÚMERO DE JUGADORES</h2>
-            <table>
+            <table class="tabla-cada-jugadores">
                 <tbody>
                 <tr class="headers">
                     <td>JUGADORES</td>
@@ -29,32 +31,365 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td><input type="date" style="width: 70px;" placeholder="fecha"></td>
-                    <td><input id=input-nombre type="text"></td>
+                    <td><input class="fecha" type="date"   placeholder="fecha"></td>
+                    <td><input class=input-nombre id="input-nombre-cada-jugadores" type="text"></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td><input type="date" style="width: 70px;"></td>
-                    <td><input type="text"></td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre id="input-nombre-cada-jugadores" type="text"></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td><input type="date" style="width: 70px;"></td>
-                    <td><input type="text"></td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre id="input-nombre-cada-jugadores" type="text"></td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td><input type="date" style="width: 70px;"></td>
-                    <td><input type="text"></td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre id="input-nombre-cada-jugadores" type="text"></td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td><input type="date" style="width: 70px;"></td>
-                    <td><input type="text"></td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre id="input-nombre-cada-jugadores" type="text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla">
+            <h2 class="titulo-tabla">LOS PRIMEROS GANADORES CON CADA MECH</h2>
+            <table class="tabla-cada-mech">
+                <tbody>
+                <tr class="headers">
+                    <td>MECH</td>
+                    <td>FECHA</td>
+                    <td>NOMBRE</td>
+                </tr>
+                <tr>
+                    <td>MONTAÑÉS</td>
+                    <td><input class="fecha" type="date"   placeholder="fecha"></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>LEÑADOR</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>ZANCUDO</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>IRA DE ODÍN</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>TATANKA</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
                 </tr>
                 </tbody>
                 </table>
         </div>
+
+        <div class="tabla">
+            <h2 class="titulo-tabla">LOS PRIMEROS GANADORES DE CADA AÑO</h2>
+            <table class="tabla-cada-año">
+                <tbody>
+                <tr class="headers">
+                    <td>AÑO</td>
+                    <td>FECHA</td>
+                    <td>NOMBRE</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td><input class="fecha" type="date"   placeholder="fecha"></td>
+                    <td><input class=input-nombre id=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>2026</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>2027</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>2028</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>2029</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla">
+            <h2 class="titulo-tabla">LOS PRIMEROS GANADORES DE CADA MES</h2>
+            <table class="tabla-cada-mes">
+                <tbody>
+                <tr class="headers">
+                    <td>MES</td>
+                    <td>FECHA</td>
+                    <td>NOMBRE</td>
+                </tr>
+                <tr>
+                    <td>ENERO</td>
+                    <td><input class="fecha" type="date"   placeholder="fecha"></td>
+                    <td><input class=input-nombre id=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>FEBRERO</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>MARZO</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>ABRIL</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>MAYO</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>JUNIO</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>JULIO</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>AGOSTO</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>SEPTIEMBRE</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>OCTUBRE</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>NOVIEMBRE</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>DICIEMBRE</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla">
+            <h2 class="titulo-tabla">LOS PRIMEROS EN OBTENER ESTA CANTIDAD DE FICHAS DE CORRUPCIÓN</h2>
+            <table class="tabla-cada-fichas-corrupción">
+                <tbody>
+                <tr class="headers">
+                    <td>CORRUPCIÓN</td>
+                    <td>FECHA</td>
+                    <td>NOMBRE</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td><input class="fecha" type="date"   placeholder="fecha"></td>
+                    <td><input class=input-nombre id=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>5+</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>10+</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>15+</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>20+</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla">
+            <h2 class="titulo-tabla">LOS PRIMEROS GANADORES CON CADA PERSONAJE/COMPAÑERO</h2>
+            <table class="tabla-cada-pareja">
+                <tbody>
+                <tr class="headers">
+                    <td>PAREJA</td>
+                    <td>FECHA</td>
+                    <td>NOMBRE</td>
+                </tr>
+                <tr>
+                    <td>AKIKO Y JIRO</td>
+                    <td><input class="fecha" type="date"   placeholder="fecha"></td>
+                    <td><input class=input-nombre id=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>ANNA Y WOJTEK+</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>GUNTER Y NACHT</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>MATTHEW Y CAESAR</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>VESNA Y VOLTAN</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>OLGA Y CHANGA</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla">
+            <h2 class="titulo-tabla">LOS PRIMEROS JUGADORES CON AL MENOS ESTA PUNTUACIÓN</h2>
+            <table class="tabla-puntuacion">
+                <tbody>
+                <tr class="headers">
+                    <td>$</td>
+                    <td>FECHA</td>
+                    <td>NOMBRE</td>
+                </tr>
+                <tr>
+                    <td>50 $</td>
+                    <td><input class="fecha" type="date"   placeholder="fecha"></td>
+                    <td><input class=input-nombre id=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>60 $</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>70 $</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>80 $</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>90 $</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td>100 $</td>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla">
+            <h2 class="titulo-tabla">LOS PRIMEROS JUGADORES EN ELIMINAR LA CORRUPCIÓN DE LA UBICACIÓN 20</h2>
+            <table class="tabla-eliminar-corrupción">
+                <tbody>
+                <tr class="headers">
+                    <td>FECHA</td>
+                    <td>NOMBRE</td>
+                </tr>
+                <tr>
+                    <td><input class="fecha" type="date"   placeholder="fecha"></td>
+                    <td><input class=input-nombre id=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla">
+            <h2 class="titulo-tabla">LOS PRIMEROS JUGADORES EN TENER GLORIA POR MÁS DE DOS CATEGORÍAS AVANZADAS (RESOLVER, COMBINAR Y MEJORAR)</h2>
+            <table class="tabla-gloria">
+                <tbody>
+                <tr class="headers">
+                    <td>FECHA</td>
+                    <td>NOMBRE</td>
+                </tr>
+                <tr>
+                    <td><input class="fecha" type="date"   placeholder="fecha"></td>
+                    <td><input class=input-nombre id=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                <tr>
+                    <td><input class="fecha" type="date"  ></td>
+                    <td><input class=input-nombre type="text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button class="boton" style="width: 90; height: 100px; margin: 0 auto; padding: 1em;">Click</button>
     </main>
 
     <footer>
