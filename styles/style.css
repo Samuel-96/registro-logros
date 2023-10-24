@@ -145,6 +145,15 @@ footer img{
     background-size: cover;
     
   }
+
+  .titulo-web{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+  }
+
   .titulo-web h1:before {
     position: absolute;
     left: 0;
@@ -212,7 +221,7 @@ footer img{
     border-style: none;
     text-align: center;
     font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 17px;
+    font-size: 12px;
   }
 
   /*controla espacio entre celdas*/
