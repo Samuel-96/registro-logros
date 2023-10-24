@@ -6,13 +6,13 @@
     <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
     <link rel="stylesheet" href="./styles/style.css">
     <script type="module" src="script.js" defer></script>
-    <title>Página</title>
+    <title>Registro de logros</title>
 </head>
 <body>
 
     <div class="titulo-web">
         <div>
-            <img src="./resources/abrir-menu.png" alt="">
+            <img class="abrir-menu" src="./resources/abrir-menu.png" alt="">
         </div>
         <h1>EXPEDICIONES
             <br>
@@ -22,7 +22,7 @@
       </div>
 
     <main>
-        <div class="tabla">
+        <div class="tabla" id="tabla-jugadores">
             <h2 class="titulo-tabla">LOS PRIMEROS GANADORES POR CADA NÚMERO DE JUGADORES</h2>
             <table class="tabla-cada-jugadores">
                 <tbody>
@@ -60,7 +60,7 @@
             </table>
         </div>
 
-        <div class="tabla">
+        <div class="tabla" id="tabla-cada-mech">
             <h2 class="titulo-tabla">LOS PRIMEROS GANADORES CON CADA MECH</h2>
             <table class="tabla-cada-mech">
                 <tbody>
@@ -98,7 +98,7 @@
                 </table>
         </div>
 
-        <div class="tabla">
+        <div class="tabla" id="tabla-cada-año">
             <h2 class="titulo-tabla">LOS PRIMEROS GANADORES DE CADA AÑO</h2>
             <table class="tabla-cada-año">
                 <tbody>
@@ -146,7 +146,7 @@
             </table>
         </div>
 
-        <div class="tabla">
+        <div class="tabla" id="tabla-cada-mes">
             <h2 class="titulo-tabla">LOS PRIMEROS GANADORES DE CADA MES</h2>
             <table class="tabla-cada-mes">
                 <tbody>
@@ -219,7 +219,7 @@
             </table>
         </div>
 
-        <div class="tabla">
+        <div class="tabla" id="tabla-cada-fichas-corrupcion">
             <h2 class="titulo-tabla">LOS PRIMEROS EN OBTENER ESTA CANTIDAD DE FICHAS DE CORRUPCIÓN</h2>
             <table class="tabla-cada-fichas-corrupcion">
                 <tbody>
@@ -257,7 +257,7 @@
             </table>
         </div>
 
-        <div class="tabla">
+        <div class="tabla" id="tabla-cada-pareja">
             <h2 class="titulo-tabla">LOS PRIMEROS GANADORES CON CADA PERSONAJE/COMPAÑERO</h2>
             <table class="tabla-cada-pareja">
                 <tbody>
@@ -300,7 +300,7 @@
             </table>
         </div>
 
-        <div class="tabla">
+        <div class="tabla" id="tabla-cada-puntuacion">
             <h2 class="titulo-tabla">LOS PRIMEROS JUGADORES CON AL MENOS ESTA PUNTUACIÓN</h2>
             <table class="tabla-cada-puntuacion">
                 <tbody>
@@ -343,7 +343,7 @@
             </table>
         </div>
 
-        <div class="tabla">
+        <div class="tabla" id="tabla-eliminar-corrupcion">
             <h2 class="titulo-tabla">LOS PRIMEROS JUGADORES EN ELIMINAR LA CORRUPCIÓN DE LA UBICACIÓN 20</h2>
             <table class="tabla-eliminar-corrupcion">
                 <tbody>
@@ -367,7 +367,7 @@
             </table>
         </div>
 
-        <div class="tabla">
+        <div class="tabla" id="tabla-gloria">
             <h2 class="titulo-tabla">LOS PRIMEROS JUGADORES EN TENER GLORIA POR MÁS DE DOS CATEGORÍAS AVANZADAS (RESOLVER, COMBINAR Y MEJORAR)</h2>
             <table class="tabla-gloria">
                 <tbody>
@@ -391,6 +391,23 @@
             </table>
         </div>
  </main>
+
+ <div class="menu">
+    <div class="contenido-menu">
+        <div>
+            <img class="cerrar-menu" src="./resources/cerrar-menu.png" alt="boton de cerrar menu">
+        </div>
+        <a href="#tabla-jugadores">LOS PRIMEROS GANADORES POR CADA NÚMERO DE JUGADORES</a>
+        <a href="#tabla-cada-mech">LOS PRIMEROS GANADORES CON CADA MECH</a>
+        <a href="#tabla-cada-año">LOS PRIMEROS GANADORES DE CADA AÑO</a>
+        <a href="#tabla-cada-mes">LOS PRIMEROS GANADORES DE CADA MES</a>
+        <a href="#tabla-cada-fichas-corrupcion">LOS PRIMEROS EN OBTENER ESTA CANTIDAD DE FICHAS DE CORRUPCIÓN</a>
+        <a href="#tabla-cada-pareja">LOS PRIMEROS GANADORES CON CADA PERSONAJE/COMPAÑERO</a>
+        <a href="#tabla-cada-puntuacion">LOS PRIMEROS JUGADORES CON AL MENOS ESTA PUNTUACIÓN</a>
+        <a href="#tabla-eliminar-corrupcion">LOS PRIMEROS JUGADORES EN ELIMINAR LA CORRUPCIÓN DE LA UBICACIÓN 20</a>
+        <a href="#tabla-gloria">LOS PRIMEROS JUGADORES EN TENER GLORIA POR MÁS DE DOS CATEGORÍAS AVANZADAS (RESOLVER, COMBINAR Y MEJORAR)</a>
+    </div>
+</div>
 
     <footer>
         <p>Copyright © 2023 Samuel-96</p>

@@ -1,4 +1,7 @@
 import {guardarDatos, cargarDatos} from "./localStorage.js";
+import { añadirEventos } from "./styles/eventos.js";
+
+añadirEventos();
 
 //declaracion de variables
 const datosJson = [];
@@ -66,3 +69,4 @@ window.addEventListener("load", () => {
     }
     
 });
+
